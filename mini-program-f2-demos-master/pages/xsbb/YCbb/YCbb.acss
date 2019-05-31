@@ -1,0 +1,115 @@
+page {
+  background-color: #eee;
+}
+
+/* 1 */
+
+.top {
+  height: 50%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.tb-head {
+  height: 15%;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-bottom: 5rpx solid darkgray;
+}
+
+/* 1.3 */
+
+.table {
+  height: 85%;
+  background-color: #fff
+}
+
+/* 1.3.1 */
+
+.tr3 {
+  height: 42%;
+  width: 100%;
+  display: flex;
+}
+
+.tr-d {
+  height: 14%;
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx dashed darkgray;
+}
+
+.tr2 {
+  height: 28%;
+  width: 100%;
+  display: flex;
+}
+
+.tr-s {
+  height: 14%;
+  width: 100%;
+  display: flex;
+  border-bottom: 5rpx solid darkgray;
+}
+
+.td-row2-col3 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx dashed darkgray;
+}
+
+.td-row3-col3 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+.td-row3 {
+  flex: 1;
+  display: flex;
+  border-bottom: 1rpx dashed darkgray;
+}
+
+.td-row1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td-row2 {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.th-row2 {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.th-row3 {
+  height: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cbtn {
+  background-color: #b5c4b1;
+  opacity: 0.8;
+}

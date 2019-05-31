@@ -1,0 +1,80 @@
+page {
+  background-color: #eee;
+}
+
+/* 1 */
+
+.top {
+  height: 50%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.tb-head {
+  height: 15%;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-bottom: 5rpx solid darkgray;
+}
+
+.table {
+  height: 85%;
+  background-color: #fff
+}
+
+.tb-title{
+  height: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-bottom: 2rpx solid darkgray;
+}
+
+.th-row2 {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.th-row3 {
+  height: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tr2{
+  height: 32%;
+  width: 100%;
+}
+
+.tr{
+  height:50%;
+  width: 100%;
+  display: flex;
+}
+
+.td-row{
+  height: 100%;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid darkgray;
+  border-left: 1rpx solid darkgray;
+}
+
+.cbtn {
+  background-color: #b5c4b1;
+  opacity: 0.8;
+}

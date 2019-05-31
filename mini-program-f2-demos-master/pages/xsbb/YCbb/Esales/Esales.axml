@@ -1,0 +1,77 @@
+<view style="height:{{windowHeight}}rpx">
+  <view class="top">
+    <view class="tb-head" a:if="{{css==0}}">
+      <view class="th-row2 cbtn" onTap="datePicker">{{title}}(选择)                                            
+      </view>
+      <view class="th-row3">单位：万元                                              
+      </view>
+    </view>
+    <view class="tb-head" a:else>
+      <view class="th-row2">{{title}}                                           
+      </view>
+      <view class="th-row3">单位：万元                                              
+      </view>
+    </view>
+    <view class="table">
+      <view class="tb-title">面料事业部      
+      </view>
+      <view class="tr3">
+        <view class="tr2">
+          <view class="td-row2-col3">销售收入                          
+          </view>
+          <view class="td-row3-col3">
+            <view class="td-row3">
+              <view class="td-row1">实际                                                                                
+              </view>
+              <view class="td-row2 cbtn" onTap="mlsyb">{{listData[0].AOM==""?0:listData[0].AOM}}                                                                                
+              </view>
+            </view>
+            <view class="td-row3">
+              <view class="td-row1">指标                                                                                
+              </view>
+              <view class="td-row2">{{listData[1].AOM==""?0:listData[1].AOM}}                                                                                 
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="tr">
+          <view class="th-row2">客诉损失                                            
+          </view>
+          <!-- <view class="th-row3 cbtn" onTap="ks">{{listData[2].AOM==""?0:listData[2].AOM}}                                             
+          </view> -->
+          <view class="th-row3">{{listData[2].AOM==""?0:listData[2].AOM}}                                             
+          </view>
+        </view>
+      </view>
+      <view class="tb-title">地板事业部      
+      </view>
+      <view class="tr3">
+        <view class="tr2">
+          <view class="td-row2-col3">销售收入                          
+          </view>
+          <view class="td-row3-col3">
+            <view class="td-row3">
+              <view class="td-row1">实际                                                                                
+              </view>
+              <view class="td-row2 cbtn" onTap="dbsyb">{{listData[3].AOM==""?0:listData[3].AOM}}                                                                                  
+              </view>
+            </view>
+            <view class="td-row3">
+              <view class="td-row1">指标                                                                                
+              </view>
+              <view class="td-row2">{{listData[4].AOM==""?0:listData[4].AOM}}                                                                                  
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="tr">
+          <view class="th-row2">客诉损失                                             
+          </view>
+          <view class="th-row3">{{listData[5].AOM==""?0:listData[5].AOM}}                                              
+          </view>
+        </view>
+      </view>
+      <!-- <view></view><view></view> -->
+    </view>
+  </view>
+</view>

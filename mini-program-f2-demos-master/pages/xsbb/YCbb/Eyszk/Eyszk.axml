@@ -1,0 +1,52 @@
+<view style="height:{{windowHeight}}rpx">
+  <view class="top">
+    <view class="tb-head">
+      <view class="th-row2 cbtn" onTap="datePicker">{{title}}(选择)                                                        
+      </view>
+      <view class="th-row3">单位：万元                                                          
+      </view>
+    </view>
+    <view class="table">
+      <view class="tb-title cbtn" onTap="mlys">面料事业部                  
+      </view>
+      <view class="tr2">
+        <view class="tr">
+          <view class="td-row">超期                                                              
+          </view>
+          <view class="td-row">总计
+          </view>
+          <view class="td-row">环比情况
+          </view>
+        </view>
+        <view class="tr">
+          <view class="td-row">                                                              
+          </view>
+          <view class="td-row">
+          </view>
+          <view class="td-row">
+          </view>
+        </view>
+      </view>
+      <view class="tb-title">地板事业部                  
+      </view>
+      <view class="tr2">
+        <view class="tr">
+          <view class="td-row">超期                                                              
+          </view>
+          <view class="td-row">总计
+          </view>
+          <view class="td-row">环比情况
+          </view>
+        </view>
+        <view class="tr">
+          <view class="td-row">                                                              
+          </view>
+          <view class="td-row">
+          </view>
+          <view class="td-row">
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,101 @@
+<view>
+  <view class="page-section">
+    <picker onChange="bindPickerChange" value="{{zindex}}" range="{{array}}">
+      <view class="row">
+        <view class="row-title">请选择仓库</view>
+        <view class="row-extra">当前选择：{{array[zindex]}}</view>
+        <image class="row-arrow" src="/image/arrowright.png" mode="aspectFill" />
+      </view>
+    </picker>
+  </view>
+  <view class="form-row">
+      <view class="select_box">
+        <view class="select" onTap="selectTap">
+          <text class="select_text">{{selectData[index]}}          
+          </text>
+        </view>
+        <view class="option_box" style="height:{{selectShow?(selectData.length>5?200:selectData.length*50):0}}rpx;">
+          <text class="option" a:for="{{selectData}}" a:key="this" data-index="{{index}}" onTap="optionTap">{{item}}          
+          </text>
+        </view>
+      </view>
+      <view class="form-row-content">
+        <input class="input" placeholder="" onInput="bindKeyInput1"/>
+      </view>
+    </view>
+    <button type="warn" onTap="search">查询    
+    </button>
+    <view class="mytotal">共{{total}}条</view>
+    <!--全部-->
+    <view hidden="{{currentTab!==0}}" class='total' style='background-color: #EBEBEB;'>
+      <view a:if="{{list.length>0}}">
+        <!-- 外层 -->
+        <view class='cont_count' a:for="{{list}}" a:key="key">
+          <!-- 编号 -->
+          <view class='seria'>
+            <label class='seriac_name'>物料名称          
+              <text>{{item.itemName}}
+              </text>
+            </label>
+            <!-- 订单状态 -->
+            <label class='seriac_start'>{{item.customerName}}
+            </label>
+          </view>
+          <!-- 列表 -->
+          <view class='list'>
+            <!-- 列表标题 -->
+            <label class='list_name'>订单号:{{item.orderNo==""?"未填":item.orderNo}}
+            <label class='list_name'>货号:{{item.GoodsCode==""?"无货号":item.GoodsCode}}
+            <label class='list_name'>M:{{item.freeNum1}}
+            <label class='list_name'>KG:{{item.freeNum2}}
+            <label class='list_name'>Y:{{item.freeNum4}}
+            <label class='list_name'>辅助:{{item.freeNum3}}
+            <label class='list_name'>单位:{{item.unit1}}
+            <label class='list_name'>客户名称:{{item.customerName==""?"未填":item.customerName}}
+            <label class='list_name'>规格型号:{{item.itemSize==""?"未填":item.itemSize}}
+            <label class='list_name'>网布规格:{{item.wbSize==""?"未填":item.wbSize}}
+            <label class='list_name'>需求日期:{{item.auxDate==""?"未填":item.auxDate}}
+            <label class='list_name'>库龄:{{item.age==""?"未填":item.age}}
+            <label class='list_name'>超期天数:{{item.auxNum==""?"未填":item.auxNum}}
+            <label class='list_name'>业务员:{{item.salesmanName==""?"未填":item.salesmanName}}           
+            </label>
+            <!-- 列表价格 -->
+            <label class='list_name'>销售单价￥{{item.taxPrice1==""?0:item.taxPrice1}}
+            <label class='list_name'>销售金额￥{{item.Somoneys==""?0:item.Somoneys}}
+            </label>
+          </view>
+          <!-- 计算 -->
+          <view class='count_eg'>
+            <!-- 居中 -->
+            <view class='count_cent'>
+              <!-- 共两件商品 -->
+              <label class='cont_cent_name'>                     
+              </label>
+              <!-- 合计 -->
+              <lable class='cont_cen_money'>
+                <text class='cont_ce_mon'>库存金额:￥{{item.moneys}}
+                </text>
+              </lable>
+            </view>
+          </view>
+          
+          <!-- <view class='coent_list'>
+            
+            <label class='coent_del' data-index='{{index}}'>取消订单
+            </label>
+            
+            <label class='coent_log_base' data-index='{{index}}'>确认收货
+            </label>
+          </view> -->
+        </view>
+      </view>
+      <!-- 否则 -->
+      <!-- <view a:else>
+        
+        <view class='cont_count'>
+          <label class='none_tab'>点击查询才能展示数据哦~~
+          </label>
+        </view>
+      </view> -->
+    </view>
+</view>

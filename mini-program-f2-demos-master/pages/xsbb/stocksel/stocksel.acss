@@ -1,0 +1,51 @@
+.red {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+
+button{
+  margin-top: 32rpx;
+}
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 100%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+}
+.swiper-tab-item{
+    width: 50%; 
+    color:#434343;
+    border-right:1px solid  #434343;
+    border-bottom: 1px solid  #434343;
+    background-color: lightseagreen
+}
+.active{
+    color:#F65959;
+    /* border-bottom: 4rpx solid #F65959; */
+    font-size: 16px;
+    font-weight: bold;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

@@ -1,0 +1,26 @@
+<view>
+  <view class="tr">
+    <view class="td">类别                                
+    </view>
+    <view class="td">数量                                
+    </view>
+    <view class="td">单位                                
+    </view>
+    <view class="td">面积(万米)                                
+    </view>
+    <view class="td">金额(万元)                                
+    </view>
+  </view>
+  <view class="tr" a:for="{{listData}}" a:key="{{index}}" onTap="MXNV" data-index="{{item}}">
+    <view class="td left"> {{item.catName1.toString().substring(0,5)}}                            
+    </view>
+    <view class="td right">{{item.Num}}
+    </view>
+    <view class="td right">{{item.Unit}}
+    </view>
+    <view class="td right">{{item.Area}}
+    </view>
+    <view class="td right">{{item.AOM}}
+    </view>
+  </view>
+</view>

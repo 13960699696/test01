@@ -1,0 +1,29 @@
+<view style="height:{{windowHeight}}rpx">
+  <view class="top">
+    <view class="tb-title">
+      空间布销售情况表
+    </view>
+    <view class="tb-head">
+      <view class="th">周期
+      </view>
+      <view class="th">长度(万米)
+      </view>
+      <view class="th">面积(万平米)
+      </view>
+      <view class="th">金额(万元)
+      </view>
+    </view>
+    <view class="tb-body">
+      <view class="tr" a:for="{{listData}}" a:key="{{code}}">
+        <view class="th">{{item.zq}}
+        </view>
+        <view class="td">{{item.Length}}
+        </view>
+        <view class="td">{{item.Area}}
+        </view>
+        <view class="td">{{item.AOM}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+page {
+  background-color: #eee;
+}
+
+.top {
+  height: 50%;
+  width: 100%;
+  color: #000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 25rpx;
+  color: #333;
+  background-color: #fff
+}
+
+.tb-title {
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5rpx solid darkgray;
+}
+
+.tb-head {
+  height: 11%;
+  border-bottom: 1rpx solid darkgray;
+  display: flex;
+}
+
+.th {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid darkgray;
+}
+
+.tb-body {
+  height: 77%;
+  border-bottom: 1rpx solid darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.tr{
+  flex:1;
+  border-bottom: 1rpx solid darkgray;
+  display: flex;
+}
+
+.td{
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-left: 1rpx solid darkgray;
+}

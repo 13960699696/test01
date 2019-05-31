@@ -1,0 +1,68 @@
+<view>
+  <view class="mx-title">({{title}})[{{catName}}]明细列表    
+  </view>
+  <view class="mx-title">
+    <view class="th3">排序方式：      
+      <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="row">
+          <view class="row-extra">{{array[index]}}          
+          </view>
+        </view>
+      </picker>
+      <image class="row-arrow" src="/img/icon/{{imgindex}}.png" onTap="selecttop"/>
+    </view>
+    <view class="th" onTap="showDialogBtn">      
+      <icon type="search" aria-label="search" size="15"/>
+    </view>
+  </view>
+  <view class="mx-unit">
+    <view class="tr">面积:万平方米</view>
+    <view class="tr">金额：万元</view>    
+  </view>
+  <view class="mx-body" a:for="{{listData}}" a:key="{{index}}">
+    <view class="mx-head">物料规格:{{item.itemSize}}        
+    </view>
+    <view class="mx">
+      <view class="mx-tr">
+        <view class="td">数量                
+        </view>
+        <view class="td">单位                
+        </view>
+        <view class="td">面积               
+        </view>
+        <view class="td">金额                
+        </view>
+      </view>
+      <view class="mx-tr">
+        <view class="td">{{item.Num.toString().substring(0,item.Num.indexOf(".") + 3)}}                
+        </view>
+        <view class="td">{{item.Unit.toString().substring(0,item.Unit.indexOf(".") + 3)}}                
+        </view>
+        <view class="td">{{item.Area.toString().substring(0,item.Area.indexOf(".") + 3)}}                
+        </view>
+        <view class="td">{{item.AOM.toString().substring(0,item.AOM.indexOf(".") + 3)}}                
+        </view>
+      </view>
+    </view>
+  </view>
+  <view><button type="warn" catchTap="loading">加载更多<view>
+  <view class="modal-mask" onTap="hideModal" catchtouchmove="preventTouchMove" a:if="{{showModal}}">
+  </view>
+  <view class="modal-dialog" a:if="{{showModal}}">
+    <view class="modal-title">搜索
+    </view>
+    <view class="modal-content">
+      <view class="modal-input">
+        <!-- <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入数量">
+        </input> -->
+        <input placeholder-class="input-holder" class="input" maxlength="10" placeholder="请输入物料代码" onInput="bindKeyInput1"/>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" catchTap="onCancel" data-status="cancel">取消
+      </view>
+      <view class="btn-confirm" catchTap="onConfirm" data-status="confirm">确定
+      </view>
+    </view>
+  </view>
+</view>

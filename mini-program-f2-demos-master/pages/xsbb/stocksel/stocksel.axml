@@ -1,0 +1,17 @@
+<!-- <view><button type="primary" onTap="kcPage1">原材料库存</button><button type="primary" onTap="kcPage2">成品半成品库存</button></view> -->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" onTap="clickTab">原材料库存  
+  </view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" onTap="clickTab">成品汇总库存  
+  </view>
+</view>
+<view class = "{{currentTab == 0 ? 'show':'hidden'}}">
+  <scroll-view>
+    <kc/>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 1 ? 'show':'hidden'}}">
+  <scroll-view>
+    <customer/>
+  </scroll-view>
+</view>

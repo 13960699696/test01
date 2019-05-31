@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dbwl": "/pages/components/T/dbwl/dbwl",
+    "kh": "/pages/components/T/kh/kh"
+  }
+}

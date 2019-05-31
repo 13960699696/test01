@@ -1,0 +1,22 @@
+<view>
+  <view class="tr">
+    <view class="td2">类别                                
+    </view>
+    <view class="td">数量                                
+    </view>
+    <view class="td">单位                                
+    </view>
+    <view class="td">金额(万元)                                
+    </view>
+  </view>
+  <view class="tr" a:for="{{listData}}" a:key="{{index}}" onTap="MXNV" data-index="{{item}}">
+    <view class="td2 left">{{item.catName}}                            
+    </view>
+    <view class="td right">{{item.Num}}
+    </view>
+    <view class="td right">{{item.Unit}}
+    </view>
+    <view class="td right">{{item.AOM}}
+    </view>
+  </view>
+</view>

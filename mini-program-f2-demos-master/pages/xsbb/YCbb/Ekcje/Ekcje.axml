@@ -1,0 +1,72 @@
+<view style="height:{{windowHeight}}rpx">
+  <view class="top">
+    <view class="tb-head">
+      <view class="th-row2 cbtn" onTap="datePicker">{{title}}(选择)                                                              
+      </view>
+      <view class="th-row3">单位：万元                                                                
+      </view>
+    </view>
+    <view class="table">
+      <view class="tb-title cbtn" onTap="mlsyb">面料事业部                        
+      </view>
+      <view class="tb-body">
+        <view class="tr">
+          <view class="th2">类别
+          </view>
+          <view class="th">仓库
+          </view>
+          <view class="th2">金额
+          </view>
+        </view>
+        <view class="tr5">
+          <view class="th2">产成品
+          </view>
+          <view class="tr3">
+            <view class="td">
+              <view class="th">面料福州
+              </view>
+              <view class="td2">111
+              </view>
+            </view>
+            <view class="td">
+              <view class="th">面料上海
+              </view>
+              <view class="td2">111
+              </view>
+            </view>
+            <view class="td">
+              <view class="th">面料广州
+              </view>
+              <view class="td2">111
+              </view>
+            </view>
+            <view class="td">
+              <view class="th">面料威海
+              </view>
+              <view class="td2">111
+              </view>
+            </view>
+            <view class="td-s">
+              <view class="th">合计
+              </view>
+              <view class="td2">111
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="tr">
+          <view class="th2">半成品
+          </view>
+          <view class="th3">11111
+          </view>
+        </view>
+        <view class="tr">
+          <view class="th2">原材料
+          </view>
+          <view class="th3">11111
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

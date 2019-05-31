@@ -1,0 +1,42 @@
+<view style="height:{{windowHeight}}rpx">
+  <view class="top">
+    <view class="tb-head" a:if="{{css==0}}">
+      <view class="th-row2 cbtn" onTap="datePicker">{{title}}(选择)                                                  
+      </view>
+      <view class="th-row3">地板事业部                                                    
+      </view>
+    </view>
+    <view class="tb-head" a:else>
+      <view class="th-row2">{{title}}                                                 
+      </view>
+      <view class="th-row3">地板事业部                                                    
+      </view>
+    </view>
+    <view class="table">
+      <view class="tr1">
+        <view class="th {{currentTab==0?'cbtn':''}}" data-current="0" onTap="clickTab">物料类别
+        </view>
+        <view class="th {{currentTab==1?'cbtn':''}}" data-current="1" onTap="clickTab">客户
+        </view>
+        <view class="th">
+        </view>
+        <view class="th">
+        </view>
+        <view class="th">
+        </view>
+      </view>
+      <view class="tr7">
+        <view a:if="{{currentTab==0}}">
+          <scroll-view>
+            <dbwl title="{{title}}"/>
+          </scroll-view>
+        </view>
+        <view a:else>
+          <scroll-view>
+            <kh title="{{title}}"/>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

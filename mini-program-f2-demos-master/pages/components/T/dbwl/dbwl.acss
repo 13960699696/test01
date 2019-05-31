@@ -1,0 +1,45 @@
+page {
+  background-color: #eee;
+}
+
+/* 1 */
+
+.top {
+  height: 50%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.tr {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 2rpx solid darkgray;
+}
+
+.td2 {
+  height: 100%;
+  flex: 2;
+  border-left: 2rpx solid darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td {
+  height: 100%;
+  flex: 1;
+  border-left: 2rpx solid darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start
+}
+
+.right {
+  justify-content: flex-end
+}

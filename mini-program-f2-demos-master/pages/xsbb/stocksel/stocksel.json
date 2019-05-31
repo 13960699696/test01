@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "customer": "/pages/components/banner/banner",
+    "kc": "/pages/components/kc/kc"
+  }
+}

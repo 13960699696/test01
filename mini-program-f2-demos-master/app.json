@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/sjindex/sjindex",
+    "pages/xsbb/line/index",
+    "pages/xsbb/stack-bar/index",
+    "pages/xsbb/stocksel/stocksel",
+    "pages/xsbb/saleskjb/saleskjb",
+    "pages/xsbb/YCbb/YCbb",
+    "pages/xsbb/YCbb/Esales/Esales",
+    "pages/xsbb/YCbb/Eyszk/Eyszk",
+    "pages/xsbb/YCbb/Esales/Tmlsales/Tmlsales",
+    "pages/xsbb/YCbb/Esales/Tks/Tks",
+    "pages/xsbb/YCbb/Ekcje/Ekcje",
+    "pages/xsbb/YCbb/Eyszk/Ymlys/Ymlys",
+    "pages/xsbb/YCbb/Ekcje/Tkcje/Tkcje",
+    "pages/xsbb/YCbb/Esales/Tdbsales/Tdbsales",
+    "pages/xsbb/YCbb/Esales/Tmlsales/FMX/FMX"
+  ],
+  "window": {
+    "titleBarColor": "#000",
+    "defaultTitle": "思嘉移动平台"
+  }
+}

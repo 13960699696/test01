@@ -1,0 +1,121 @@
+page {
+  background-color: #eee;
+}
+
+/* 1 */
+
+.top {
+  height: 50%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.tb-head {
+  height: 15%;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-bottom: 5rpx solid darkgray;
+}
+
+.table {
+  height: 85%;
+  background-color: #fff;
+}
+
+.tb-title{
+  height: 13%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-bottom: 2rpx solid darkgray;
+}
+
+.tr3{
+  height: 37%;
+  width: 100%;
+  border-bottom: 2rpx solid darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.th3{
+  height: 37%;
+  width: 100%;
+  border-bottom: 5rpx solid darkgray;
+}
+
+.tr2 {
+  flex:2;
+  width: 100%;
+  display: flex;
+}
+
+.tr{
+  flex:1;
+  width: 100%;
+  display: flex;
+}
+
+.td-row2-col3 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx dashed darkgray;
+}
+
+.td-row3-col3 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+.td-row3 {
+  flex: 1;
+  display: flex;
+  border-bottom: 1rpx dashed darkgray;
+}
+
+.td-row1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td-row2 {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.th-row2 {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.th-row3 {
+  height: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cbtn {
+  background-color: #b5c4b1;
+  opacity: 0.8;
+}
