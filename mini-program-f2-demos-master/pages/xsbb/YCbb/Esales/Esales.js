@@ -62,7 +62,7 @@ Page({
     let a = this.data.title;
     let nf = (parseInt(a.substr(0, 4))).toString();
     if (a.length == 4) {
-      var url = "http://localhost:62981/DingTalk/GetAnnualSales?action=YCXS02N&nf=" + nf + "";
+      var url = "http://125.77.111.31:8105/DingTalk/GetAnnualSales?action=YCXS02N&nf=" + nf + "";
       util.Request(url).then((res) => {
         this.setData({
           listData: res.data
@@ -70,7 +70,7 @@ Page({
       })
     } else {
       let yf = parseInt(a.substr(a.length - 2, 2))
-      var url = "http://localhost:62981/DingTalk/GetAnnualSales?action=YCXS02&nf=" + nf + "&yf=" + yf + "";
+      var url = "http://125.77.111.31:8105/DingTalk/GetAnnualSales?action=YCXS02&nf=" + nf + "&yf=" + yf + "";
       util.Request(url).then((res) => {
         this.setData({
           listData: res.data
