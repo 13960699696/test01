@@ -10,4 +10,15 @@
       </view>
     </view>
   </view>
+  <view class="card">
+    <text class="card-date">生产模块</text>
+    <view >
+      <view class="tui-table-view">
+        <view class="tui-col-3" a:for="{{charts1}}" a:for-item="chart" a:key="{{chart.name}}" >
+          <image src="../../img/icon/{{chart.name}}.png" data-page="{{chart.name}}" class="imgicon" onTap="gotoPage1"></image>
+          <view>{{chart.value}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

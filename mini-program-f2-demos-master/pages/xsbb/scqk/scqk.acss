@@ -53,6 +53,11 @@ page {
   border-bottom: 2rpx solid darkgray;
 }
 
+.body{
+  margin: 3rpx;
+  margin-top: 0
+}
+
 .tr {
   height: 60rpx;
   width: 100%;
@@ -67,6 +72,16 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.td22 {
+  height: 100%;
+  flex: 2;
+  border-left: 2rpx solid darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2rpx solid darkgray;
 }
 
 .td3 {

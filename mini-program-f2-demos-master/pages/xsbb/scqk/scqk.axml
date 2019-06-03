@@ -9,7 +9,7 @@
     <view class="title">
       按每月28天为标准统计开工率
     </view>
-    <view>
+    <view class="body">
       <view class="tr">
         <view class="td2">机台名称                                          
         </view>
@@ -17,7 +17,7 @@
         </view>
         <view class="td3">开工时间（小时）                                          
         </view>
-        <view class="td2">开工率                                         
+        <view class="td22">开工率                                         
         </view>
       </view>
       <view class="tr" a:for="{{listData}}" a:key="{{index}}" data-index="{{item}}">
@@ -27,7 +27,7 @@
         </view>
         <view class="td3 right">{{item.gs.toString().substring(0,item.gs.indexOf(".") + 3).replace(/\d{1,3}(?=(\d{3})+(\.\d*)?$)/g, '$&,')}}          
         </view>
-        <view class="td2 right">{{(item.kaijl*100).toFixed(2)+"%"}}          
+        <view class="td22 right">{{(item.kaijl*100).toFixed(2)+"%"}}          
         </view>
       </view>
     </view>
